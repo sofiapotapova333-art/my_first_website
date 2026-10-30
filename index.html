@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My GitHub Portfolio</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <div class="page">
 
+  <!-- Навігація -->
   <header class="navbar">
+
     <a class="brand" href="#home">
       <span class="brand-icon">⌘</span>
       <span>My Website</span>
@@ -24,20 +28,30 @@
       <a href="#git">Git</a>
       <a href="#contacts">Контакти</a>
     </nav>
+
   </header>
 
+
+  <!-- Головна -->
   <section class="hero" id="home">
+
     <div class="hero-content">
+
       <span class="eyebrow">
         ✦ MY FIRST GITHUB PROJECT
       </span>
 
-      <h1>Вітаю на <span class="gradient-text"> моєму сайті! </span> </h1>
+      <h1>
+        Вітаю на
+        <span class="gradient-text">моєму сайті!</span>
+      </h1>
+
+      <p class="hero-description">
         Привіт!
         <span class="gradient-text">
           Мене звати Софія
         </span>
-      </h1>
+      </p>
 
       <p class="hero-description">
         Я навчаюся працювати з Git та GitHub.
@@ -45,6 +59,7 @@
       </p>
 
       <div class="hero-actions">
+
         <a class="btn btn-light"
            href="https://github.com/sofiapotapova333-art"
            target="_blank"
@@ -55,142 +70,258 @@
         <a class="btn btn-primary" href="#about">
           Про мене ↓
         </a>
+
       </div>
+
     </div>
 
+
     <div class="hero-visual">
+
       <div class="orbit"></div>
-      <div class="floating-icon icon-git">⑂</div>
-      <div class="main-icon">⌘</div>
+
+      <div class="floating-icon icon-git">
+        ⑂
+      </div>
+
+      <div class="main-icon">
+        ⌘
+      </div>
+
       <div class="floating-icon icon-code">
         &lt;/&gt;
       </div>
+
       <div class="floating-icon icon-terminal">
         &gt;_
       </div>
+
     </div>
+
   </section>
 
+
+  <!-- Окремі секції -->
   <div class="cards">
-<section class="glass-card" id="hobbies">
-  <div class="card-icon pink">♥</div>
-<section class="git-panel" id="git">
 
-  <div class="section-heading">
-    <span class="git-symbol">⑂</span>
-    <h2>Результати роботи з Git</h2>
-  </div>
 
-  <p class="section-description">
-    Історія комітів, гілки та результати
-    виконання Git-команд.
-  </p>
+    <!-- Захоплення -->
+    <section class="glass-card" id="hobbies">
 
-  <div class="git-tabs">
-
-    <input type="radio"
-           name="git-tab"
-           id="tab-status" checked>
-
-    <input type="radio"
-           name="git-tab"
-           id="tab-branch">
-
-    <input type="radio"
-           name="git-tab"
-           id="tab-log">
-
-    <input type="radio"
-           name="git-tab"
-           id="tab-merge">
-
-    <div class="tab-labels">
-      <label for="tab-status">Git Status</label>
-      <label for="tab-branch">Git Branch</label>
-      <label for="tab-log">Git Log</label>
-      <label for="tab-merge">Merge History</label>
-    </div>
-
-    <div class="terminal">
-
-      <div class="terminal-header">
-        <div class="window-dots">
-          <span class="dot red"></span>
-          <span class="dot yellow"></span>
-          <span class="dot green"></span>
-        </div>
-
-        <span class="terminal-title">
-          git-terminal
-        </span>
+      <div class="card-icon pink">
+        ♥
       </div>
 
-      <div class="terminal-body">
+      <div>
 
-        <pre class="tab-content status"><code>$ git status
+        <h2>Мої захоплення</h2>
 
+        <ul class="hobbies-list">
+          <li>Малювання</li>
+          <li>Подорожі</li>
+          <li>Фігурне катання</li>
+        </ul>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Git -->
+    <section class="git-panel" id="git">
+
+      <div class="section-heading">
+
+        <span class="git-symbol">
+          ⑂
+        </span>
+
+        <h2>
+          Результати роботи з Git
+        </h2>
+
+      </div>
+
+
+      <p class="section-description">
+        Історія комітів, гілки та результати
+        виконання Git-команд.
+      </p>
+
+
+      <div class="git-tabs">
+
+        <!-- Перемикачі вкладок -->
+        <input
+          type="radio"
+          name="git-tab"
+          id="tab-status"
+          checked
+        >
+
+        <input
+          type="radio"
+          name="git-tab"
+          id="tab-branch"
+        >
+
+        <input
+          type="radio"
+          name="git-tab"
+          id="tab-log"
+        >
+
+        <input
+          type="radio"
+          name="git-tab"
+          id="tab-merge"
+        >
+
+
+        <!-- Назви вкладок -->
+        <div class="tab-labels">
+
+          <label for="tab-status">
+            Git Status
+          </label>
+
+          <label for="tab-branch">
+            Git Branch
+          </label>
+
+          <label for="tab-log">
+            Git Log
+          </label>
+
+          <label for="tab-merge">
+            Merge History
+          </label>
+
+        </div>
+
+
+        <!-- Термінал -->
+        <div class="terminal">
+
+          <div class="terminal-header">
+
+            <div class="window-dots">
+
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+
+            </div>
+
+            <span class="terminal-title">
+              git-terminal
+            </span>
+
+          </div>
+
+
+          <div class="terminal-body">
+
+
+            <!-- Git Status -->
+            <pre class="tab-content status"><code>$ git status
 On branch main
 nothing to commit, working tree clean</code></pre>
 
-        <pre class="tab-content branch"><code>$ git branch -a
+
+            <!-- Git Branch -->
+            <pre class="tab-content branch"><code>$ git branch -a
 
 * main
   remotes/origin/HEAD -> origin/main
   remotes/origin/feature/about
-  remotes/origin/main
-
-        <pre class="tab-content log"><code>$ git log --oneline
-
-remotes/origin/HEAD -> origin/main
-  remotes/origin/feature/about
   remotes/origin/main</code></pre>
 
-        <pre class="tab-content merge"><code>$ git log --merges
+
+            <!-- Git Log -->
+            <pre class="tab-content log"><code>$ git log --oneline
+
+remotes/origin/HEAD -> origin/main
+remotes/origin/feature/about
+remotes/origin/main</code></pre>
+
+
+            <!-- Git Merge -->
+            <pre class="tab-content merge"><code>$ git log --merges
 
 commit a1b2c3d
 Merge branch 'feature/about'</code></pre>
 
+
+          </div>
+
+        </div>
+
       </div>
-    </div>
 
-  </div>
-</section>
-<section>
-  <div> 
-    <h2>Мої захоплення</h2>
+    </section>
 
-    <ul class="hobbies-list">
-      <li>малювання</li>
-      <li>Подорожі</li>
-      <li>фігурне катанння</li>
-    </ul  </div>
-</section>
+
+
+    <!-- Про мене -->
     <section class="glass-card" id="about">
-      <div class="card-icon blue">●</div>
+
+      <div class="card-icon blue">
+        ●
+      </div>
+
       <div>
-        <h2>Про мене</h2>
+
+        <h2>
+          Про мене
+        </h2>
+
         <p>
           Я навчаюся працювати
           з Git та GitHub.
         </p>
+
       </div>
+
     </section>
 
+
+
+    <!-- Контакти -->
     <section class="glass-card" id="contacts">
-      <div class="card-icon cyan">✉</div>
+
+      <div class="card-icon cyan">
+        ✉
+      </div>
+
       <div>
-        <h2>Мої контакти</h2>
+
+        <h2>
+          Мої контакти
+        </h2>
+
         <a href="mailto:sofiapotapova333@gmail.com">
           sofiapotapova333@gmail.com
         </a>
+
       </div>
+
     </section>
+
 
   </div>
 
+
+  <!-- Footer -->
   <footer class="footer">
-    <p>Made with Git & GitHub Pages</p>
+
+    <p>
+      Made with Git & GitHub Pages
+    </p>
+
   </footer>
+
 
 </div>
 
